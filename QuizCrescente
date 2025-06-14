@@ -1,0 +1,9 @@
+package gf.oragle.programacao;
+
+public class QuizCrescente {
+String Pergunta;
+int Record;
+String Resposta;
+
+
+}
