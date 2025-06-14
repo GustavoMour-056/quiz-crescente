@@ -1,0 +1,152 @@
+package gf.oragle.programacao;
+
+import java.util.Scanner;
+
+public class QuizCrescenteTeste {
+	public static void main(String[] args) throws InterruptedException {
+		Scanner sc = new Scanner(System.in);
+		QuizCrescente qc = new QuizCrescente();
+		System.out.println("============================================");
+		System.out.println("           SEJA BEM VINDO AO");
+		System.out.println("            QUIZ CRESCENTE");
+		System.out.println("  ======================================");
+		Thread.sleep(3000);
+		System.out.println("Prepare-se para 100 perguntas gerais com dificuldade crescente!");
+		Thread.sleep(3000);
+		System.out.println("Você deve responder apenas com 'A,B,C,D ou E'. ");
+		Thread.sleep(2000);
+		System.out.println("Preparado?");
+		Thread.sleep(1000);
+		System.out.println("A) Sim");
+		Thread.sleep(500);
+		System.out.println("B) Não");
+		Thread.sleep(500);
+		System.out.println("...");
+		qc.Resposta = sc.nextLine();
+		if (qc.Resposta.equalsIgnoreCase("B")) {
+			System.out.println("Tudo bem... Volte quando estiver preparado.");
+			System.exit(0);
+		} else {
+			qc.Resposta = "";
+			Thread.sleep(3000);
+			System.out.println("Ótimo! Prepare-se para começar.");
+			Thread.sleep(3000);
+			System.out.println("5");
+			Thread.sleep(1000);
+			System.out.println("4");
+			Thread.sleep(1000);
+			System.out.println("3");
+			Thread.sleep(1000);
+			System.out.println("2");
+			Thread.sleep(1000);
+			System.out.println("1");
+			Thread.sleep(1000);
+			System.out.println("Nivel de aquecimento!");
+			Thread.sleep(5000);
+			System.out.println("Qual o nome do famoso rato da Disney?");
+			Thread.sleep(1000);
+			System.out.println("A) Pato Donald ");
+			Thread.sleep(500);
+			System.out.println("B) Pateta");
+			Thread.sleep(500);
+			System.out.println("C) Mickey Mouse");
+			Thread.sleep(500);
+			System.out.println("D) Pluto");
+			Thread.sleep(500);
+			System.out.println("E) Tio Patinhas");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("C")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual a cor do céu quando está de noite?");
+			Thread.sleep(1000);
+			System.out.println("A) Amarelo");
+			Thread.sleep(500);
+			System.out.println("B) Verde");
+			Thread.sleep(500);
+			System.out.println("C) Vermelho");
+			Thread.sleep(500);
+			System.out.println("D) Preto");
+			Thread.sleep(500);
+			System.out.println("E) Roxo");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("D")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual é o animal com fama de 'Rei da selva'?");
+			Thread.sleep(1000);
+			System.out.println("A) Leão");
+			Thread.sleep(500);
+			System.out.println("B) Formiga");
+			Thread.sleep(500);
+			System.out.println("C) Elefante");
+			Thread.sleep(500);
+			System.out.println("D) Humano");
+			Thread.sleep(500);
+			System.out.println("E) Joaninha");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("A")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				Thread.sleep(1000);
+				
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.exit(0);
+			}
+
+		}
+
+	}
+}
