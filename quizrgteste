@@ -1,0 +1,691 @@
+package gf.oracle.programacao;
+
+import java.util.Scanner;
+
+public class quizrgteste {
+	public static void main(String[] args) throws InterruptedException {
+		Scanner sc = new Scanner(System.in);
+		quizrg qc = new quizrg();
+		int totalPerguntas = 25;
+		while (qc.PerguntaAtual < 17) {
+			if ((qc.PerguntaAtual - 1) % 5 == 0 && qc.PerguntaAtual != 1)
+			{
+				qc.Checkpoint = qc.PerguntaAtual;
+				System.out.println("Checkpoint salvo...");
+				
+			}
+		System.out.println("============================================");
+		System.out.println("           SEJA BEM VINDO AO");
+		System.out.println("            QUIZ CRESCENTE");
+		System.out.println("  ======================================");
+		Thread.sleep(3000);
+		System.out.println("Prepare-se para 100 perguntas gerais com dificuldade crescente!");
+		Thread.sleep(3000);
+		System.out.println("Você deve responder apenas com 'A,B,C,D ou E'. ");
+		Thread.sleep(2000);
+		System.out.println("Preparado?");
+		Thread.sleep(1000);
+		System.out.println("A) Sim");
+		Thread.sleep(500);
+		System.out.println("B) Não");
+		Thread.sleep(500);
+		System.out.println("...");
+		qc.Resposta = sc.nextLine();
+		if (qc.Resposta.equalsIgnoreCase("B")) {
+			System.out.println("Tudo bem... Volte quando estiver preparado.");
+			System.exit(0);
+		} else {
+			qc.Resposta = "";
+			Thread.sleep(3000);
+			System.out.println("Ótimo... Prepare-se para começar.");
+			Thread.sleep(3000);
+			System.out.println("Conhecimentos gerais!");
+			Thread.sleep(1000);
+			System.out.println("5");
+			Thread.sleep(1000);
+			System.out.println("4");
+			Thread.sleep(1000);
+			System.out.println("3");
+			Thread.sleep(1000);
+			System.out.println("2");
+			Thread.sleep(1000);
+			System.out.println("1");
+			qc.PerguntaAtual++;
+			Thread.sleep(1000);
+			System.out.println("Qual o nome do famoso rato da Disney?");
+			Thread.sleep(1000);
+			System.out.println("A) Pato Donald ");
+			Thread.sleep(500);
+			System.out.println("B) Pateta");
+			Thread.sleep(500);
+			System.out.println("C) Mickey Mouse");
+			Thread.sleep(500);
+			System.out.println("D) Pluto");
+			Thread.sleep(500);
+			System.out.println("E) Tio Patinhas");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("C")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 0!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual a cor do céu quando está de noite?");
+			Thread.sleep(1000);
+			System.out.println("A) Amarelo");
+			Thread.sleep(500);
+			System.out.println("B) Verde");
+			Thread.sleep(500);
+			System.out.println("C) Vermelho");
+			Thread.sleep(500);
+			System.out.println("D) Preto");
+			Thread.sleep(500);
+			System.out.println("E) Roxo");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("D")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 1!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual é o animal com fama de 'Rei da selva'?");
+			Thread.sleep(1000);
+			System.out.println("A) Leão");
+			Thread.sleep(500);
+			System.out.println("B) Formiga");
+			Thread.sleep(500);
+			System.out.println("C) Elefante");
+			Thread.sleep(500);
+			System.out.println("D) Humano");
+			Thread.sleep(500);
+			System.out.println("E) Joaninha");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("A")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 2!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual a forma química da água?");
+			Thread.sleep(1000);
+			System.out.println("A) H2O");
+			Thread.sleep(500);
+			System.out.println("B) O2");
+			Thread.sleep(500);
+			System.out.println("C) CO2");
+			Thread.sleep(500);
+			System.out.println("D) NaCl");
+			Thread.sleep(500);
+			System.out.println("E) H Deus O");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("A")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 3!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual a capital do Japão?");
+			Thread.sleep(1000);
+			System.out.println("A) Seul");
+			Thread.sleep(500);
+			System.out.println("B) Pequim");
+			Thread.sleep(500);
+			System.out.println("C) Brasília");
+			Thread.sleep(500);
+			System.out.println("D) Tóquio");
+			Thread.sleep(500);
+			System.out.println("E) Doha");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("D")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 4!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual o maior rio do mundo em volume de água?");
+			Thread.sleep(1000);
+			System.out.println("A) Rio Missisipi");
+			Thread.sleep(500);
+			System.out.println("B) Rio Nilo");
+			Thread.sleep(500);
+			System.out.println("C) Rio Amazonas");
+			Thread.sleep(500);
+			System.out.println("D) Yangtze");
+			Thread.sleep(500);
+			System.out.println("E) Rio Paraná");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("C")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 5!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual o nome da galáxia que se encontra no sistema solar?");
+			Thread.sleep(1000);
+			System.out.println("A) Via Láctea");
+			Thread.sleep(500);
+			System.out.println("B) Triângulo");
+			Thread.sleep(500);
+			System.out.println("C) Andrômeda");
+			Thread.sleep(500);
+			System.out.println("D) Sombrero");
+			Thread.sleep(500);
+			System.out.println("E) Bode");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("A")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 6!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual foi o primeiro presidente do Brasil?");
+			Thread.sleep(1000);
+			System.out.println("A) Bolsonaro");
+			Thread.sleep(500);
+			System.out.println("B) Marechal Teodoro Da Fonseca");
+			Thread.sleep(500);
+			System.out.println("C) Juscelino Kubitschek");
+			Thread.sleep(500);
+			System.out.println("D) Tancredo Neves");
+			Thread.sleep(500);
+			System.out.println("E) Tiririca");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("B")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente");
+				System.out.println("Você acertou: 7!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual foi o primeiro homem do mundo descrito na bíblia?");
+			Thread.sleep(1000);
+			System.out.println("A) Peter Jordan");
+			Thread.sleep(500);
+			System.out.println("B) Adão");
+			Thread.sleep(500);
+			System.out.println("C) Sílvio Santos");
+			Thread.sleep(500);
+			System.out.println("D) Caim");
+			Thread.sleep(500);
+			System.out.println("E) Abrão");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("B")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 8!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual gás as plantas absorvem para realizar fotossíntese?");
+			Thread.sleep(1000);
+			System.out.println("A) Oxigênio");
+			Thread.sleep(500);
+			System.out.println("B) Metano");
+			Thread.sleep(500);
+			System.out.println("C) Nitrogênio");
+			Thread.sleep(500);
+			System.out.println("D) Fumaça");
+			Thread.sleep(500);
+			System.out.println("E) Dióxido de Carbono");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("E")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 9!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual o metal mais abundante na crosta terrestre?");
+			Thread.sleep(1000);
+			System.out.println("A) Alumínio");
+			Thread.sleep(500);
+			System.out.println("B) Cobre");
+			Thread.sleep(500);
+			System.out.println("C) Ferro");
+			Thread.sleep(500);
+			System.out.println("D) Prata");
+			Thread.sleep(500);
+			System.out.println("E) Redstone");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("A")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 10!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual teoria científica Albert Einstein formulou?");
+			Thread.sleep(1000);
+			System.out.println("A) Teoria da gravidade");
+			Thread.sleep(500);
+			System.out.println("B) Teoria da evolução");
+			Thread.sleep(500);
+			System.out.println("C) Teoria quântica");
+			Thread.sleep(500);
+			System.out.println("D) Teoria do Big Bang");
+			Thread.sleep(500);
+			System.out.println("E) Teoria da relatividade");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("E")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 11!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			Thread.sleep(1000);
+			System.out.println("Opa! Você descobriu uma seção bônus: Java");
+			System.out.println("Prepare-se");
+			Thread.sleep(1000);
+			System.out.println("5");
+			Thread.sleep(1000);
+			System.out.println("4");
+			Thread.sleep(1000);
+			System.out.println("3");
+			Thread.sleep(1000);
+			System.out.println("2");
+			Thread.sleep(1000);
+			System.out.println("1");
+			Thread.sleep(1000);
+			System.out.println("Qual tipo de variável é conhecida por resultados em verdadeiro ou falso?");
+			Thread.sleep(1000);
+			System.out.println("A) int");
+			Thread.sleep(500);
+			System.out.println("B) double");
+			Thread.sleep(500);
+			System.out.println("C) if");
+			Thread.sleep(500);
+			System.out.println("D) boolean");
+			Thread.sleep(500);
+			System.out.println("E) else");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("D")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 13!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual classe é usada para ler entrada em texto do usuário?");
+			Thread.sleep(1000);
+			System.out.println("A) Scanner");
+			Thread.sleep(500);
+			System.out.println("B) FileReader");
+			Thread.sleep(500);
+			System.out.println("C) sysout()");
+			Thread.sleep(500);
+			System.out.println("D) For");
+			Thread.sleep(500);
+			System.out.println("E) While");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("A")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 14!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual é o método usaro para imprimir texto na tela?");
+			Thread.sleep(1000);
+			System.out.println("A) Scanner");
+			Thread.sleep(500);
+			System.out.println("B) System.out.print();");
+			Thread.sleep(500);
+			System.out.println("C) System.out.println();");
+			Thread.sleep(500);
+			System.out.println("D) System.out.printf();");
+			Thread.sleep(500);
+			System.out.println("E) System.out.write();");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("C")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 15!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual variável armazena números inteiros?");
+			Thread.sleep(1000);
+			System.out.println("A) float");
+			Thread.sleep(500);
+			System.out.println("B) short");
+			Thread.sleep(500);
+			System.out.println("C) double");
+			Thread.sleep(500);
+			System.out.println("D) long");
+			Thread.sleep(500);
+			System.out.println("E) int");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("E")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 16!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+			qc.Resposta = "";
+			System.out.println("Qual variável armazena números decimais?");
+			Thread.sleep(1000);
+			System.out.println("A) char");
+			Thread.sleep(500);
+			System.out.println("B) double");
+			Thread.sleep(500);
+			System.out.println("C) long");
+			Thread.sleep(500);
+			System.out.println("D) short");
+			Thread.sleep(500);
+			System.out.println("E) int");
+			Thread.sleep(500);
+			System.out.println("...");
+			qc.Resposta = sc.nextLine();
+			if (qc.Resposta.equalsIgnoreCase("B")) {
+				Thread.sleep(1000);
+				System.out.println("Certa resposta!");
+				Thread.sleep(1000);
+				System.out.println("5");
+				Thread.sleep(1000);
+				System.out.println("4");
+				Thread.sleep(1000);
+				System.out.println("3");
+				Thread.sleep(1000);
+				System.out.println("2");
+				Thread.sleep(1000);
+				System.out.println("1");
+				qc.PerguntaAtual++;
+				Thread.sleep(1000);
+			} else {
+				Thread.sleep(1000);
+				System.out.println("Resposta incorreta... Tente novamente.");
+				System.out.println("Você acertou: 17!");
+				qc.PerguntaAtual = qc.Checkpoint;
+				System.exit(0);
+			}
+
+		}
+
+	}
+}}
